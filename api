@@ -1,0 +1,42 @@
+# fast-MT
+
+1)API for Employee register
+  method:post
+  url:http://localhost:8001/api/register/  
+  input:{"email":"demo@gmail.com","name":"demo","password":"11111
+  response:{"ok":"true"}
+   
+2)API for Employee signIn   
+  method:post
+  url:http://localhost:8001/api/signin/
+  input:{"email":"demo@gmail.com","password":"11111"}
+  response:{ "_id": "62cc7fd150f71533d0f33d15","name": "demo",
+             "email": "demo@gmail.com", "createdAt": "2022-07-11T19:53:53.088Z",
+             "updatedAt": "2022-07-11T19:53:53.088Z","__v": 0}
+   
+3)Public Api to submit enquiry
+  method:post
+  url:http://localhost:8001/api/client-form/
+  input:{"email":"demo@gmail.com","name":"demo","course":"demo course"}
+  response:{"name": "demo","email": "demo@gmail.com","course": "demo course","counsiler": "none","_id": "62cc814a50f71533d0f33d18"}
+  
+4)Api to claim lead by logged cousiler 
+  method:post
+  url:http://localhost:8001/api/claim/<claimid>
+  input:params<claim id>
+  response:{ "ok": true}  
+  
+5) API to fetch unclaimed leads. 
+   method:get
+   url:http://localhost:8001/api/client-form/
+   response:[{},{}]
+   
+   
+6) Api to get claimed leads by logged user
+   method:get
+   url:http://localhost:8001/api/counsiler-claimed/
+   response;[{},{}]
+
+
+
+
